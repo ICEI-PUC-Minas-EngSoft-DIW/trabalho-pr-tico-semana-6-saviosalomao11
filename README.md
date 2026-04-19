@@ -8,18 +8,20 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Sávio José Salomão Ferreira da Silva
+- Matricula: 906957
+- Proposta de projeto escolhida: E-commerce
+- Breve descrição sobre seu projeto: Projeto focado em uma interface moderna e funcional, desenvolvido com HTML5, CSS3 e Bootstrap 5. A plataforma conta com catálogo de produtos, sistema de filtros e adaptação completa para dispositivos móveis.
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Versão Desktop](images/home-page01.png)
+![Versão Desktop](images/home-page02.png)
 
 ## Print da versão responsiva com Bootstrap [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Versão Mobile](images/home-page01-mobile.png)
+![Versão Mobile](images/home-page02-mobile.png)
 
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
