@@ -1,12 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>TECH STORE</title>
 </head>
 <body>
-    
+
+    <header class="cabeçalho d-flex align-items-center justify-content-between">
+        <div class="nome-loja">
+            <h1>TECH STORE 🏬</h1>
+        </div>
+        <div class="utilitários d-flex align-items-center gap-3">
+            <button class="carrinho">🛒</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-expanded="false">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <div class="collapse" id="navMenu">
+        <nav class="nav-mobile d-flex flex-column align-items-center gap-3 py-3">
+            <a href="#">Início</a>
+            <a href="#">Produtos</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Contato</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="banner-principal">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1400&h=350&fit=crop" alt="banner principal">
+        </section>
+
+        <h2 class="titulo-pagina">Bem-vindo à TechStore</h2>
+        <p class="frase-titulo">Os melhores produtos de tecnologia com os melhores preços</p>
+
+        <section class="buscar-produtos">
+            <input class="barra-de-pesquisa" type="text" placeholder="🔍 Buscar produtos...">
+        </section>
+
+        <section class="filtros d-flex flex-wrap justify-content-center gap-3 mb-5 px-3">
+            <button class="filtro-ativo">Todos</button>
+            <button class="filtro">Áudio</button>
+            <button class="filtro">Smartphones</button>
+            <button class="filtro">Computadores</button>
+            <button class="filtro">Wearables</button>
+            <button class="filtro">Câmeras</button>
+            <button class="filtro">Tablets</button>
+            <button class="filtro">Periféricos</button>
+        </section>
+    </main>
+
+    <section class="grade-produtos">
+        <div class="container-xl">
+            <div class="row g-4">
+
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card-produto h-100">
+                        <a href="#"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop" alt="Fones de Ouvido"></a>
+                        <div class="info-produto d-flex flex-column flex-grow-1 p-3 text-start">
+                            <h3>Fones de Ouvido Premium</h3>
+                            <p class="flex-grow-1">Fones de ouvido sem fio com cancelamento de ruído ativo e bateria de 30 horas.</p>
+                            <span class="avaliacao">⭐ 4.8</span>
+                            <div class="rodape-card d-flex justify-content-between align-items-center">
+                                <div class="valores d-flex flex-column">
+                                    <span class="preco">R$ 599.90</span>
+                                    <span class="estoque">25 em estoque</span>
+                                </div>
+                                <button class="btn-comprar">🛒</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card-produto h-100">
+                        <a href="#"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300&h=200&fit=crop" alt="Smartphone"></a>
+                        <div class="info-produto d-flex flex-column flex-grow-1 p-3 text-start">
+                            <h3>Smartphone Ultra</h3>
+                            <p class="flex-grow-1">Smartphone 5G com tela AMOLED de 6.7 polegadas e câmera tripla de 108MP.</p>
+                            <span class="avaliacao">⭐ 4.9</span>
+                            <div class="rodape-card d-flex justify-content-between align-items-center">
+                                <div class="valores d-flex flex-column">
+                                    <span class="preco">R$ 3499.00</span>
+                                    <span class="estoque">15 em estoque</span>
+                                </div>
+                                <button class="btn-comprar">🛒</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card-produto h-100">
+                        <a href="#"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300&h=200&fit=crop" alt="Notebook"></a>
+                        <div class="info-produto d-flex flex-column flex-grow-1 p-3 text-start">
+                            <h3>Notebook Pro</h3>
+                            <p class="flex-grow-1">Notebook profissional com processador i7, 16GB RAM e SSD de 512GB.</p>
+                            <span class="avaliacao">⭐ 4.7</span>
+                            <div class="rodape-card d-flex justify-content-between align-items-center">
+                                <div class="valores d-flex flex-column">
+                                    <span class="preco">R$ 5299.00</span>
+                                    <span class="estoque">10 em estoque</span>
+                                </div>
+                                <button class="btn-comprar">🛒</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card-produto h-100">
+                        <a href="#"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=200&fit=crop" alt="Smartwatch"></a>
+                        <div class="info-produto d-flex flex-column flex-grow-1 p-3 text-start">
+                            <h3>Smartwatch Elite</h3>
+                            <p class="flex-grow-1">Smartwatch com GPS, monitor cardíaco e resistência à água de até 50m.</p>
+                            <span class="avaliacao">⭐ 4.6</span>
+                            <div class="rodape-card d-flex justify-content-between align-items-center">
+                                <div class="valores d-flex flex-column">
+                                    <span class="preco">R$ 899.00</span>
+                                    <span class="estoque">30 em estoque</span>
+                                </div>
+                                <button class="btn-comprar">🛒</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card-produto h-100">
+                        <a href="#"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=300&h=200&fit=crop" alt="Câmera"></a>
+                        <div class="info-produto d-flex flex-column flex-grow-1 p-3 text-start">
+                            <h3>Câmera Digital 4K</h3>
+                            <p class="flex-grow-1">Câmera digital profissional com estabilização de imagem.</p>
+                            <span class="avaliacao">⭐ 4.9</span>
+                            <div class="rodape-card d-flex justify-content-between align-items-center">
+                                <div class="valores d-flex flex-column">
+                                    <span class="preco">R$ 4599.00</span>
+                                    <span class="estoque">8 em estoque</span>
+                                </div>
+                                <button class="btn-comprar">🛒</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card-produto h-100">
+                        <a href="#"><img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=300&h=200&fit=crop" alt="Caixa de Som"></a>
+                        <div class="info-produto d-flex flex-column flex-grow-1 p-3 text-start">
+                            <h3>Caixa de Som Bluetooth</h3>
+                            <p class="flex-grow-1">Caixa de som portátil com som 360° e bateria de 24 horas.</p>
+                            <span class="avaliacao">⭐ 4.5</span>
+                            <div class="rodape-card d-flex justify-content-between align-items-center">
+                                <div class="valores d-flex flex-column">
+                                    <span class="preco">R$ 449.00</span>
+                                    <span class="estoque">40 em estoque</span>
+                                </div>
+                                <button class="btn-comprar">🛒</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card-produto h-100">
+                        <a href="#"><img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=300&h=200&fit=crop" alt="Tablet"></a>
+                        <div class="info-produto d-flex flex-column flex-grow-1 p-3 text-start">
+                            <h3>Tablet Max</h3>
+                            <p class="flex-grow-1">Tablet com tela de 11 polegadas, caneta stylus e teclado destacável.</p>
+                            <span class="avaliacao">⭐ 4.7</span>
+                            <div class="rodape-card d-flex justify-content-between align-items-center">
+                                <div class="valores d-flex flex-column">
+                                    <span class="preco">R$ 2799.00</span>
+                                    <span class="estoque">20 em estoque</span>
+                                </div>
+                                <button class="btn-comprar">🛒</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+                    <div class="card-produto h-100">
+                        <a href="#"><img src="https://images.unsplash.com/photo-1595225476474-87563907a212?w=300&h=200&fit=crop" alt="Teclado Gamer"></a>
+                        <div class="info-produto d-flex flex-column flex-grow-1 p-3 text-start">
+                            <h3>Teclado Gamer RGB</h3>
+                            <p class="flex-grow-1">Teclado mecânico com switches customizáveis e iluminação RGB.</p>
+                            <span class="avaliacao">⭐ 4.8</span>
+                            <div class="rodape-card d-flex justify-content-between align-items-center">
+                                <div class="valores d-flex flex-column">
+                                    <span class="preco">R$ 699.00</span>
+                                    <span class="estoque">35 em estoque</span>
+                                </div>
+                                <button class="btn-comprar">🛒</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape-site">
+        <p>Tech Store 2026</p>
+        <div class="redes-sociais">
+            <a href="https://www.instagram.com/_saviosalomao/" target="_blank">Instagram</a> |
+            <a href="https://www.facebook.com/savio.salomao.39" target="_blank">Facebook</a> |
+            <a href="https://x.com/_saviosalomao" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
